@@ -1,0 +1,15 @@
+[debug] Acquiring lock on file D:\Bigdatalearning\workspace\spark-pro\project\target\.sbt-compilation-infos\spark-pro-compile\.sbt-idea-lock ...
+[error] D:\Bigdatalearning\workspace\spark-pro\src\main\scala\com\ravi\kafka\AppKafka.scala:39:75: Symbol 'type <none>.package.DataFrame' is missing from the classpath.
+[error] This symbol is required by 'value com.datastax.spark.connector.package.dataFrame'.
+[error] Make sure that type DataFrame is in your classpath and check for conflicting dependencies with `-Ylog-classpath`.
+[error] A full rebuild may help if 'package.class' was compiled against an incompatible version of <none>.package.
+[error]     casCluster.saveToCassandra("test_keyspace","kafka_topics",SomeColumns("id","name","value","other"));
+[error]                                                                           ^
+[error] D:\Bigdatalearning\workspace\spark-pro\src\main\scala\com\ravi\kafka\AppKafka.scala:39:16: Symbol 'type org.apache.spark.sql.Row' is missing from the classpath.
+[error] This symbol is required by 'method com.datastax.spark.connector.writer.LowPriorityRowWriterFactoryImplicits.sqlRowWriterFactory'.
+[error] Make sure that type Row is in your classpath and check for conflicting dependencies with `-Ylog-classpath`.
+[error] A full rebuild may help if 'LowPriorityRowWriterFactoryImplicits.class' was compiled against an incompatible version of org.apache.spark.sql.
+[error]     casCluster.saveToCassandra("test_keyspace","kafka_topics",SomeColumns("id","name","value","other"));
+[error]                ^
+[error] two errors found
+[debug] Releasing lock on file D:\Bigdatalearning\workspace\spark-pro\project\target\.sbt-compilation-infos\spark-pro-compile\.sbt-idea-lock.
